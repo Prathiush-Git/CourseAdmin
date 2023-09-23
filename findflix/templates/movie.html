@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Suggestions</title>
+</head>
+<body>
+    <h1>Movie Suggestions</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>{{ movie.title }}</li>
+        {% empty %}
+            <li>No movies found for the selected genre.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'genre' %}">Go back to genre selection</a>
+</body>
+</html>
+

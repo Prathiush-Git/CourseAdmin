@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Genre Selection</title>
+</head>
+<body>
+    <center>
+    <h1>Select a Genre</h1>
+    <form method="GET" action="{% url 'movie' %}">
+        <select name="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="thriller">Thriller</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="romance">Romance</option>
+            <option value="adventure">Adventure</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vazhipad details</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <center>
+            <h1>VAZHIPAD DETAILS</h1>
+            NAME
+            <br>
+            <input type="text" name="name"><br><br>
+            PRICE
+            <br>
+            <input type="number" name="price"><br><br>
+            <input type="submit">
+        </center>
+    </form>
+</body>
+</html>
